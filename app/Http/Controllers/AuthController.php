@@ -18,7 +18,7 @@ class AuthController extends Controller
 
         $user = DB::table('users')->where('student_id', $request->student_id)->first();
 
-        if ($user && password_verify($request->password, $user->password)) {
+        if ($user && Hash::check($request->password, $user->password)) {
             $request->session()->put('key', $user->student_id);
             DB::table('logs')->insert([
                 'user_id' => $user->id,
