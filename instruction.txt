@@ -1,0 +1,8 @@
+Create simple login, logout, registration and update profile setting for enrollment student portal.
+All logs(every event in the system) must be stored in the database
+
+Requirements :
+- minimum of 10 field for registration
+- push to repo your final output and source code
+- Apply your own design(make it professional)
+- present your output on next meeting(inidividual)
